@@ -1,0 +1,1 @@
+{"programName":"wise-web","storages":[{"type":"local","name":"local:wise-web/","removable":false,"writable":true,"repository":"johtela/wise-web"},{"type":"web","name":"https://raw.githubusercontent.com/johtela/wise-prelude/master/","removable":true,"writable":false}],"panes":[{"tabs":[{"module":"Test1"},{"module":"Html/Element"}]}],"paneLayout":"horizontal","maximized":true}
