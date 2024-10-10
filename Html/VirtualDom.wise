@@ -1,1 +1,1 @@
-Html/VirtualDom«import«Lang/Base, Lang/String, Control/Monad, Html/Element», type«data«VNode, |«VAttr«String, String», VEvent«String, EventListener«Element»», VNode«String, [«VNode»»»»», define«<div>«->«[«VNode», VNode», VNode«"div", _»»»»
+Html/VirtualDom«import«Lang/Base, Lang/String, Control/Monad, Html/Element», type«data«VNode, |«VAttr«String, String», VEvent«String, EventListener«Element»», VNode«String, [«VNode»»»»», define«<div>«VNode«"div", _»», <div/>«VNode«"div", [»», <span>«VNode«"span", _»», <span/>«VNode«"span", [»»»»
