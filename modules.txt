@@ -1,2 +1,4 @@
 Html/Element
 Html/VirtualDom
+Html/Event
+Html/Collection
