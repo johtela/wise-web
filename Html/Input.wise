@@ -1,0 +1,14 @@
+Html/Input«import«Html/Element», ---«"# Input Elements and Forms
+
+
+Definitions for HTML input elements and forms."», type«---«"## Input Element
+
+The HTMLInputElement interface provides special properties and methods for manipulating the options, layout, and presentation of `<input>` elements."», object«HTMLInputElement, extends«HTMLElement», accept«String, get, set», alt«String, get, set», autocomplete«String, get, set», checked«Bool, get, set», defaultChecked«Bool, get, set», defaultValue«String, get, set», disabled«Bool, get, set», form«?«HTMLFormElement», get», formAction«String, get, set», formEnctype«String, get, set», formMethod«String, get, set», formNoValidate«Bool, get, set», formTarget«String, get, set», height«Number, get, set», indeterminate«Bool, get, set», labels«NodeList«HTMLLabelElement», get», list«?«HTMLDataListElement», get», max«String, get, set», maxLength«Number, get, set», min«String, get, set», minLength«Number, get, set», multiple«Number, get, set», name«String, get, set», pattern«String, get, set», placeholder«String, get, set», popopeverTargetAction«String, get, set», popoverTargetElement«Element, get, set», readOnly«Bool, get, set», required«Bool, get, set», selectionDirection«String, get, set», selectionEnd«Number, get, set», selectionStart«Number, get, set», size«Number, get, set», src«String, get, set», step«String, get, set», type«String, get, set», validationMessage«String, get», validity«ValidityState, get», value«String, get, set»», ---«"## Form
+
+The HTMLFormElement interface represents a `<form>` element in the DOM. It allows access to—and, in some cases, modification of—aspects of the form, as well as access to its component elements."», object«HTMLFormElement, extends«HTMLElement»», ---«"## Label
+
+The HTMLLabelElement interface gives access to properties specific to `<label>` elements. It inherits methods and properties from the base HTMLElement interface."», object«HTMLLabelElement, extends«HTMLElement»», ---«"## Data List
+
+The HTMLDataListElement interface provides special properties (beyond the HTMLElement object interface it also has available to it by inheritance) to manipulate `<datalist>` elements and their content."», object«HTMLDataListElement, extends«HTMLElement»», ---«"## Validity State
+
+The ValidityState interface represents the validity states that an element can be in, with respect to constraint validation. Together, they help explain why an element's value fails to validate, if it's not valid."», object«ValidityState»»»

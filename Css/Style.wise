@@ -1,0 +1,1 @@
+Css/Style«import«Html/Collection», type«object«CSSStyleDeclaration, extends«CollectionBase«String»», cssText«String, get, set», parentRule«CSSStyleDeclaration, get», cssFloat«String, get, set», getPropertyPriority«->«String, String»», getPropertyValue«->«String, String»», removeProperty«->«String, String»», setProperty«->«String, String, String, Unit»»»»»
