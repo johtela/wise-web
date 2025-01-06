@@ -1,0 +1,5 @@
+Html/Document«import«Html/Element», type«---«"## Document
+
+The Document interface represents any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree.
+
+The DOM tree includes elements such as `<body>` and `<table>`, among many others. It provides functionality globally to the document, like how to obtain the page's URL and create new elements in the document."», object«Document, activeElement«Element, get», adoptedStyleSheets«[«CSSStyleSheet»», body«HTMLBodyElement»»»»

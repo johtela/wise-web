@@ -4,3 +4,6 @@ Html/Event
 Html/Collection
 Css/Style
 Html/Input
+Html/Node
+Css/Rule
+Html/Document
