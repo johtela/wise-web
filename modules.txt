@@ -1,10 +1,10 @@
 Html/Element
 Html/VirtualDom
-Html/Event
 Html/Collection
+Html/Event
 Css/Style
 Html/Input
-Html/Node
 Css/Rule
 Html/Document
+Html/Node
 Css/Font
