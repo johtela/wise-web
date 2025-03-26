@@ -1,9 +1,9 @@
-Css/Font
-Css/Style
-Html/Collection
-Html/Document
 Html/Element
+Html/VirtualDom
 Html/Event
+Html/Collection
+Css/Style
 Html/Input
 Html/Node
-Html/VirtualDom
+Html/Document
+Css/Font
