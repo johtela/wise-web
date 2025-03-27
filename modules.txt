@@ -1,9 +1,9 @@
 Html/Element
 Html/VirtualDom
-Html/Collection
 Html/Event
+Html/Collection
 Css/Style
 Html/Input
-Html/Document
 Html/Node
+Html/Document
 Css/Font
