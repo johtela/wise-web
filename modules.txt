@@ -7,3 +7,5 @@ Html/Event
 Html/Input
 Html/Node
 Html/VirtualDom
+Html/UIEvent
+Html/HTMLElement
