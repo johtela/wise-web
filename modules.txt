@@ -9,3 +9,4 @@ Html/Node
 Html/VirtualDom
 Html/UIEvent
 Html/HTMLElement
+IO/Stream
