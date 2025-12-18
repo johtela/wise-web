@@ -1,0 +1,10 @@
+Web/Url«import«Lang/Number¸ Lang/String»¸ "# URL API
+
+
+The URL API is a component of the URL standard, which defines what constitutes a valid Uniform Resource Locator and the API that accesses and manipulates URLs. The URL standard also defines concepts such as domains, hosts, and IP addresses, and also attempts to describe in a standard way the legacy application/x-www-form-urlencoded MIME type used to submit web forms' contents as a set of key/value pairs."¸ type«"## URL
+
+The URL interface is used to parse, construct, normalize, and encode URLs. It works by providing properties which allow you to easily read and modify the components of a URL.
+
+You normally create a new URL object by specifying the URL as a string when calling its constructor, or by providing a relative URL and a base URL. You can then easily read the parsed components of the URL or make changes to the URL."¸ object«URL¸ new«->«String¸ String¸ URL»»¸ parse«->«String¸ ?«String»¸ ?«URL»»»¸ canParse«->«String¸ ?«String»¸ Bool»»¸ href«String¸ get¸ set»¸ origin«String¸ get»¸ protocol«String¸ get¸ set»¸ username«String¸ get¸ set»¸ password«String¸ get¸ set»¸ host«String¸ get¸ set»¸ hostname«String¸ get¸ set»¸ port«String¸ get¸ set»¸ pathname«String¸ get¸ set»¸ search«String¸ get¸ set»¸ searchParams«URLSearchParams¸ get»¸ hash«String¸ get¸ set»¸ toJSON«String»»¸ "## URLSearchParams
+
+The URLSearchParams interface defines utility methods to work with the query string of a URL."¸ object«URLSearchParams¸ new«->«?«String»¸ URLSearchParams»»¸ size«Number¸ get»¸ append«->«String¸ String¸ Unit»»¸ delete«->«String¸ ?«String»¸ Unit»»¸ get«->«String¸ ?«String»»»¸ getAll«->«String¸ String»»¸ has«->«String¸ ?«String»¸ Bool»»¸ set«->«String¸ String¸ Unit»»¸ sort«Unit»»»»

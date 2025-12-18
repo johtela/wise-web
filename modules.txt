@@ -4,9 +4,12 @@ Html/Collection
 Html/Document
 Html/Element
 Html/Event
+Html/HTMLElement
 Html/Input
 Html/Node
-Html/VirtualDom
 Html/UIEvent
-Html/HTMLElement
+Html/VirtualDom
 IO/Stream
+IO/File
+Web/Base
+Web/Url

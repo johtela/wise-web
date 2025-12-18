@@ -1,0 +1,14 @@
+Web/Base«import«Lang/Number¸ Lang/String»¸ "# Document Object Model (DOM)
+
+
+The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory. Usually it refers to JavaScript, even though modeling HTML, SVG, or XML documents as objects are not part of the core JavaScript language.
+
+The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.
+
+Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed."¸ type«"## DOM Exception
+
+
+The DOMException interface represents an abnormal event (called an exception) that occurs as a result of calling a method or accessing a property of a web API. This is how error conditions are described in web APIs."¸ object«DOMException¸ new«->«?«String»¸ ?«String»¸ DOMException»»¸ name«String¸ get»¸ message«String¸ get»¸ code«Number¸ get»¸ INDEX_SIZE_ERR«Number¸ get¸ static»¸ DOMSTRING_SIZE_ERR«Number¸ get¸ static»¸ HIERARCHY_REQUEST_ERR«Number¸ get¸ static»¸ WRONG_DOCUMENT_ERR«Number¸ get¸ static»¸ INVALID_CHARACTER_ERR«Number¸ get¸ static»¸ NO_DATA_ALLOWED_ERR«Number¸ get¸ static»¸ NO_MODIFICATION_ALLOWED_ERR«Number¸ get¸ static»¸ NOT_FOUND_ERR«Number¸ get¸ static»¸ NOT_SUPPORTED_ERR«Number¸ get¸ static»¸ INUSE_ATTRIBUTE_ERR«Number¸ get¸ static»¸ INVALID_STATE_ERR«Number¸ get¸ static»¸ SYNTAX_ERR«Number¸ get¸ static»¸ INVALID_MODIFICATION_ERR«Number¸ get¸ static»¸ NAMESPACE_ERR«Number¸ get¸ static»¸ INVALID_ACCESS_ERR«Number¸ get¸ static»¸ VALIDATION_ERR«Number¸ get¸ static»¸ TYPE_MISMATCH_ERR«Number¸ get¸ static»¸ SECURITY_ERR«Number¸ get¸ static»¸ NETWORK_ERR«Number¸ get¸ static»¸ ABORT_ERR«Number¸ get¸ static»¸ URL_MISMATCH_ERR«Number¸ get¸ static»¸ QUOTA_EXCEEDED_ERR«Number¸ get¸ static»¸ TIMEOUT_ERR«Number¸ get¸ static»¸ INVALID_NODE_TYPE_ERR«Number¸ get¸ static»¸ DATA_CLONE_ERR«Number¸ get¸ static»»¸ "## Quota Exceeded Error
+
+
+The QuotaExceededError interface represents an error when a requested operation would exceed a system-imposed storage quota."¸ alias«QuotaExceededErrorOptions«.rest»¸ {«quota«Number»¸ requested«Number»¸ .rest»»¸ object«QuotaExceededError¸ extends«DOMException»¸ new«->«?«String»¸ ?«QuotaExceededErrorOptions«|»»¸ QuotaExceededError»»¸ quota«?«Number»¸ get»¸ requested«?«Number»¸ get»»¸ alias«Function«any»¸ ->«...«any»¸ any»»»»
