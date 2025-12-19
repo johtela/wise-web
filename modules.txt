@@ -13,3 +13,4 @@ IO/Stream
 IO/File
 Web/Base
 Web/Url
+Html/Geometry
