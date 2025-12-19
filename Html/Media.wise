@@ -1,0 +1,65 @@
+Html/Media«import«Html/HTMLElement»¸ type«"## HTMLPictureElement
+
+The HTMLPictureElement interface represents a `<picture>` HTML element. It doesn't implement specific properties or methods."¸ object«HTMLPictureElement¸ extends«HTMLElement»¸ new«HTMLPictureElement»»¸ "## HTMLSourceElement
+
+The HTMLSourceElement interface provides special properties (beyond the regular HTMLElement object interface it also has available to it by inheritance) for manipulating `<source>` elements."¸ object«HTMLSourceElement¸ extends«HTMLElement»¸ new«HTMLSourceElement»¸ src«String¸ get¸ set»¸ type«String¸ get¸ set»¸ srcset«String¸ get¸ set»¸ sizes«String¸ get¸ set»¸ media«String¸ get¸ set»¸ width«Number¸ get¸ set»¸ height«Number¸ get¸ set»»¸ "## HTMLIFrameElement
+
+The HTMLIFrameElement interface provides special properties and methods (beyond those of the HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of inline frame elements."¸ object«HTMLIFrameElement¸ extends«HTMLElement»¸ new«HTMLIFrameElement»¸ src«String¸ get¸ set»¸ srcdoc«String¸ get¸ set»¸ name«String¸ get¸ set»¸ sandbox«DOMTokenList¸ get»¸ allow«String¸ get¸ set»¸ allowFullscreen«Bool¸ get¸ set»¸ width«String¸ get¸ set»¸ height«String¸ get¸ set»¸ referrerPolicy«String¸ get¸ set»¸ loading«String¸ get¸ set»¸ contentDocument«?«Document»¸ get»¸ contentWindow«?«Window»¸ get»¸ getSVGDocument«?«Document»»¸ align«String¸ get¸ set»¸ scrolling«String¸ get¸ set»¸ frameBorder«String¸ get¸ set»¸ longDesc«String¸ get¸ set»¸ marginHeight«String¸ get¸ set»¸ marginWidth«String¸ get¸ set»»¸ "## HTMLEmbedElement
+
+The HTMLEmbedElement interface provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating `<embed>` elements."¸ object«HTMLEmbedElement¸ extends«HTMLElement»¸ new«HTMLEmbedElement»¸ src«String¸ get¸ set»¸ type«String¸ get¸ set»¸ width«String¸ get¸ set»¸ height«String¸ get¸ set»¸ getSVGDocument«?«Document»»¸ align«String¸ get¸ set»¸ name«String¸ get¸ set»»¸ "## HTMLObjectElement
+
+
+The HTMLObjectElement interface provides special properties and methods (beyond those on the HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of `<object>` element, representing external resources."¸ object«HTMLObjectElement¸ extends«HTMLElement»¸ new«HTMLObjectElement»¸ data«String¸ get¸ set»¸ type«String¸ get¸ set»¸ name«String¸ get¸ set»¸ form«?«HTMLFormElement»¸ get»¸ width«String¸ get¸ set»¸ height«String¸ get¸ set»¸ contentDocument«?«Document»¸ get»¸ contentWindow«?«Window»¸ get»¸ getSVGDocument«?«Document»»¸ willValidate«Bool¸ get»¸ validity«ValidityState¸ get»¸ validationMessage«String¸ get»¸ checkValidity«Bool»¸ reportValidity«Bool»¸ setCustomValidity«->«String¸ Unit»»¸ align«String¸ get¸ set»¸ archive«String¸ get¸ set»¸ code«String¸ get¸ set»¸ declare«Bool¸ get¸ set»¸ hspace«Number¸ get¸ set»¸ standby«String¸ get¸ set»¸ vspace«Number¸ get¸ set»¸ codeBase«String¸ get¸ set»¸ codeType«String¸ get¸ set»¸ useMap«String¸ get¸ set»¸ border«String¸ get¸ set»»¸ "## TimeRanges
+
+
+When loading a media resource for use by an `<audio>` or `<video>` element, the TimeRanges interface is used for representing the time ranges of the media resource that have been buffered, the time ranges that have been played, and the time ranges that are seekable."¸ object«TimeRanges¸ length«Number¸ get»¸ start«->«Number¸ Number»»¸ end«->«Number¸ Number»»»¸ "## MediaError
+
+The MediaError interface represents an error which occurred while handling media in an HTML media element based on HTMLMediaElement, such as `<audio>` or `<video>`.
+ 
+A MediaError object describes the error in general terms using a numeric code categorizing the kind of error, and a message, which provides specific diagnostics about what went wrong."¸ object«MediaError¸ MEDIA_ERR_ABORTED«Number¸ get¸ static»¸ MEDIA_ERR_NETWORK«Number¸ get¸ static»¸ MEDIA_ERR_DECODE«Number¸ get¸ static»¸ MEDIA_ERR_SRC_NOT_SUPPORTED«Number¸ get¸ static»¸ code«Number¸ get»¸ message«String¸ get»»¸ "## AudioTrack
+
+The AudioTrack interface represents a single audio track from one of the HTML media elements, `<audio>` or `<video>`.
+
+The most common use for accessing a  AudioTrack object is to toggle its enabled property in order to mute and unmute the track."¸ object«AudioTrack¸ id«String¸ get»¸ kind«String¸ get»¸ label«String¸ get»¸ language«String¸ get»¸ enabled«Bool¸ get¸ set»»¸ "## AudioTrackList
+
+The AudioTrackList interface is used to represent a list of the audio tracks contained within a given HTML media element, with each track represented by a separate AudioTrack object in the list."¸ object«AudioTrackList¸ extends«EventTarget»¸ length«Number¸ get»¸ getTrackById«->«String¸ ?«AudioTrack»»»¸ onchange«EventHandler¸ get¸ set»¸ onaddtrack«EventHandler¸ get¸ set»¸ onremovetrack«EventHandler¸ get¸ set»»¸ "## VideoTrack
+
+The VideoTrack interface represents a single video track from a `<video>` element.
+
+The most common use for accessing a VideoTrack object is to toggle its selected property in order to make it the active video track for its `<video>` element."¸ object«VideoTrack¸ id«String¸ get»¸ kind«String¸ get»¸ label«String¸ get»¸ language«String¸ get»¸ selected«Bool¸ get¸ set»»¸ "## VideoTrackList
+
+The VideoTrackList interface is used to represent a list of the video tracks contained within a `<video>` element, with each track represented by a separate VideoTrack object in the list."¸ object«VideoTrackList¸ extends«EventTarget»¸ length«Number¸ get»¸ getTrackById«->«String¸ ?«VideoTrack»»»¸ selectedIndex«Number¸ get»¸ onchange«EventHandler¸ get¸ set»¸ onaddtrack«EventHandler¸ get¸ set»¸ onremovetrack«EventHandler¸ get¸ set»»¸ "## TextTrack
+
+The TextTrack interface of the WebVTT API represents a text track associated with a media element.
+
+An object of this type owns the list of VTTCue objects that will be displayed over the video at various points."¸ data«TextTrackKind¸ |«_TextTrackKind:subtitles«"subtitles"»¸ _TextTrackKind:captions«"captions"»¸ _TextTrackKind:descriptions«"descriptions"»¸ _TextTrackKind:chapters«"chapters"»¸ _TextTrackKind:metadata«"metadata"»»»¸ data«TextTrackMode¸ |«_TextTrackMode:disabled«"disabled"»¸ _TextTrackMode:hidden«"hidden"»¸ _TextTrackMode:showing«"showing"»»»¸ object«TextTrack¸ extends«EventTarget»¸ kind«TextTrackKind¸ get»¸ label«String¸ get»¸ language«String¸ get»¸ id«String¸ get»¸ inBandMetadataTrackDispatchType«String¸ get»¸ mode«TextTrackMode¸ get¸ set»¸ cues«?«TextTrackCueList»¸ get»¸ activeCues«?«TextTrackCueList»¸ get»¸ addCue«->«TextTrackCue¸ Unit»»¸ removeCue«->«TextTrackCue¸ Unit»»¸ oncuechange«EventHandler¸ get¸ set»»¸ "## TextTrackCue
+
+The TextTrackCue interface of the WebVTT API is the abstract base class for the various derived cue types, such as VTTCue; you will work with these derived types rather than the base class.
+
+These cues represent strings of text presented for some duration of time during the performance of a TextTrack. The cue includes the start time (the time at which the text will be displayed) and the end time (the time at which it will be removed from the display), as well as other information."¸ object«TextTrackCue¸ extends«EventTarget»¸ track«?«TextTrack»¸ get»¸ id«String¸ get¸ set»¸ startTime«Number¸ get¸ set»¸ endTime«Number¸ get¸ set»¸ pauseOnExit«Bool¸ get¸ set»¸ onenter«EventHandler¸ get¸ set»¸ onexit«EventHandler¸ get¸ set»»¸ "## TextTrackCueList
+
+
+The TextTrackCueList interface of the WebVTT API is an array-like object that represents a dynamically updating list of TextTrackCue objects."¸ object«TextTrackCueList¸ length«Number¸ get»¸ getCueById«->«String¸ ?«TextTrackCue»»»»¸ "## TextTrackList
+
+The TextTrackList interface is used to represent a list of the text tracks defined for the associated video or audio element, with each track represented by a separate TextTrack object in the list."¸ object«TextTrackList¸ extends«EventTarget»¸ length«Number¸ get»¸ getTrackById«->«String¸ ?«TextTrack»»»¸ onchange«EventHandler¸ get¸ set»¸ onaddtrack«EventHandler¸ get¸ set»¸ onremovetrack«EventHandler¸ get¸ set»»¸ "## HTMLMediaElement
+
+The HTMLMediaElement interface adds to HTMLElement the properties and methods needed to support basic media-related capabilities that are common to audio and video.
+
+The HTMLVideoElement and HTMLAudioElement elements both inherit this interface."¸ data«CanPlayTypeResult¸ |«_CanPlayTypeResult:«""»¸ _CanPlayTypeResult:maybe«"maybe"»¸ _CanPlayTypeResult:probably«"probably"»»»¸ object«HTMLMediaElement¸ extends«HTMLElement»¸ error«?«MediaError»¸ get»¸ src«String¸ get¸ set»¸ srcObject«?«Blob»¸ get¸ set»¸ currentSrc«String¸ get»¸ crossOrigin«?«String»¸ get¸ set»¸ NETWORK_EMPTY«Number¸ get¸ static»¸ NETWORK_IDLE«Number¸ get¸ static»¸ NETWORK_LOADING«Number¸ get¸ static»¸ NETWORK_NO_SOURCE«Number¸ get¸ static»¸ networkState«Number¸ get»¸ preload«String¸ get¸ set»¸ buffered«TimeRanges¸ get»¸ load«Unit»¸ canPlayType«->«String¸ CanPlayTypeResult»»¸ HAVE_NOTHING«Number¸ get¸ static»¸ HAVE_METADATA«Number¸ get¸ static»¸ HAVE_CURRENT_DATA«Number¸ get¸ static»¸ HAVE_FUTURE_DATA«Number¸ get¸ static»¸ HAVE_ENOUGH_DATA«Number¸ get¸ static»¸ readyState«Number¸ get»¸ seeking«Bool¸ get»¸ currentTime«Number¸ get¸ set»¸ fastSeek«->«Number¸ Unit»»¸ duration«Number¸ get»¸ getStartDate«object»¸ paused«Bool¸ get»¸ defaultPlaybackRate«Number¸ get¸ set»¸ playbackRate«Number¸ get¸ set»¸ preservesPitch«Bool¸ get¸ set»¸ played«TimeRanges¸ get»¸ seekable«TimeRanges¸ get»¸ ended«Bool¸ get»¸ autoplay«Bool¸ get¸ set»¸ loop«Bool¸ get¸ set»¸ play«Unit»¸ pause«Unit»¸ controls«Bool¸ get¸ set»¸ volume«Number¸ get¸ set»¸ muted«Bool¸ get¸ set»¸ defaultMuted«Bool¸ get¸ set»¸ audioTracks«AudioTrackList¸ get»¸ videoTracks«VideoTrackList¸ get»¸ textTracks«TextTrackList¸ get»¸ addTextTrack«->«TextTrackKind¸ ?«String»¸ ?«String»¸ TextTrack»»»¸ "## HTMLVideoElement
+
+
+Implemented by the `<video>` element, the HTMLVideoElement interface provides special properties and methods for manipulating video objects. It also inherits properties and methods of HTMLMediaElement and HTMLElement."¸ object«HTMLVideoElement¸ extends«HTMLMediaElement»¸ new«HTMLVideoElement»¸ width«Number¸ get¸ set»¸ height«Number¸ get¸ set»¸ videoWidth«Number¸ get»¸ videoHeight«Number¸ get»¸ poster«String¸ get¸ set»¸ playsInline«Bool¸ get¸ set»»¸ "## HTMLAudioElement
+
+
+The HTMLAudioElement interface provides access to the properties of `<audio>` elements, as well as methods to manipulate them."¸ object«HTMLAudioElement¸ extends«HTMLMediaElement»¸ new«HTMLAudioElement»»¸ "## HTMLTrackElement
+
+
+The HTMLTrackElement interface represents an HTML `<track>` element within the DOM. This element can be used as a child of either `<audio>` or `<video>` to specify a text track containing information such as closed captions or subtitles."¸ object«HTMLTrackElement¸ extends«HTMLElement»¸ new«HTMLTrackElement»¸ kind«String¸ get¸ set»¸ src«String¸ get¸ set»¸ srclang«String¸ get¸ set»¸ label«String¸ get¸ set»¸ default«Bool¸ get¸ set»¸ NONE«Number¸ get¸ static»¸ LOADING«Number¸ get¸ static»¸ LOADED«Number¸ get¸ static»¸ ERROR«Number¸ get¸ static»¸ readyState«Number¸ get»¸ track«TextTrack¸ get»»¸ "## TrackEvent
+
+
+The TrackEvent interface of the HTML DOM API is used for events which represent changes to a set of available tracks on an HTML media element; these events are `addtrack` and `removetrack`."¸ alias«TrackEventInit«.rest»¸ EventInit«|«track«VideoTrack»¸ .rest»»»¸ object«TrackEvent¸ extends«Event»¸ new«->«String¸ ?«TrackEventInit«|»»¸ TrackEvent»»¸ track«VideoTrack¸ get»»¸ "## HTMLMapElement
+
+The HTMLMapElement interface provides special properties and methods (beyond those of the regular object HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of map elements."¸ object«HTMLMapElement¸ extends«HTMLElement»¸ new«HTMLMapElement»¸ name«String¸ get¸ set»¸ areas«NamedCollection«HTMLAreaElement»¸ get»»¸ "## HTMLAreaElement
+
+
+The HTMLAreaElement interface provides special properties and methods (beyond those of the regular object HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of `<area>` elements."¸ object«HTMLAreaElement¸ extends«HTMLElement»¸ href«String¸ get¸ set»¸ origin«String¸ get»¸ protocol«String¸ get¸ set»¸ username«String¸ get¸ set»¸ password«String¸ get¸ set»¸ host«String¸ get¸ set»¸ hostname«String¸ get¸ set»¸ port«String¸ get¸ set»¸ pathname«String¸ get¸ set»¸ search«String¸ get¸ set»¸ hash«String¸ get¸ set»¸ new«HTMLAreaElement»¸ alt«String¸ get¸ set»¸ coords«String¸ get¸ set»¸ shape«String¸ get¸ set»¸ target«String¸ get¸ set»¸ download«String¸ get¸ set»¸ ping«String¸ get¸ set»¸ rel«String¸ get¸ set»¸ relList«DOMTokenList¸ get»¸ referrerPolicy«String¸ get¸ set»¸ noHref«Bool¸ get¸ set»»»»
