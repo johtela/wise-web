@@ -1,4 +1,4 @@
-Html/Media«import«Html/HTMLElement»¸ type«"## HTMLPictureElement
+Html/Media«import«Html/Element»¸ type«"## HTMLPictureElement
 
 The HTMLPictureElement interface represents a `<picture>` HTML element. It doesn't implement specific properties or methods."¸ object«HTMLPictureElement¸ extends«HTMLElement»¸ new«HTMLPictureElement»»¸ "## HTMLSourceElement
 

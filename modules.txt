@@ -2,7 +2,6 @@ Css/Font
 Css/Style
 Html/Collection
 Html/Document
-Html/Element
 Html/Event
 Html/HTMLElement
 Html/Input
@@ -15,3 +14,4 @@ Web/Base
 Web/Url
 Html/Geometry
 Html/Media
+Html/Element

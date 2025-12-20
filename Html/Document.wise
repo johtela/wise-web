@@ -1,4 +1,4 @@
-Html/Document«import«Html/HTMLElement¸ Css/Font¸ Css/Style»¸ type«"## DocumentType
+Html/Document«import«Html/Element¸ Css/Font¸ Css/Style»¸ type«"## DocumentType
 
 The DocumentType interface represents a Node containing a doctype."¸ object«DocumentType¸ extends«Node»¸ name«String¸ get»¸ publicId«String¸ get»¸ systemId«String¸ get»¸ after«->«...«Node»¸ Unit»»¸ before«->«...«Node»¸ Unit»»¸ remove«Unit»¸ replaceWith«->«...«Node»¸ Unit»»»¸ "## DOMImplementation
 
