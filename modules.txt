@@ -3,7 +3,6 @@ Css/Style
 Html/Collection
 Html/Document
 Html/Event
-Html/HTMLElement
 Html/Input
 Html/Node
 Html/UIEvent
