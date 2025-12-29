@@ -14,3 +14,4 @@ Web/Url
 Html/Geometry
 Html/Media
 Html/Element
+Html/Table
