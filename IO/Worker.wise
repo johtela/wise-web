@@ -1,0 +1,66 @@
+IO/Worker«import«Html/Canvas»¸ "# Web Workers API
+
+Web Workers makes it possible to run a script operation in a background thread separate from the main execution thread of a web application. The advantage of this is that laborious processing can be performed in a separate thread, allowing the main (usually the UI) thread to run without being blocked/slowed down."¸ type«"## MessageEvent
+
+The MessageEvent interface represents a message received by a target object.
+
+This is used to represent messages in:
+
+- Server-sent events (see the message event of
+  EventSource).
+- Web sockets (see the message event of WebSocket).
+- Cross-document messaging (see `Window.postMessage()` and
+  the message event of Window).
+- Channel messaging (see `MessagePort.postMessage()` and
+  the message event of MessagePort).
+- Cross-worker/document messaging (see the above two
+  entries, but also `Worker.postMessage()`, the message 
+  event of Worker, the message event of
+  ServiceWorkerGlobalScope, etc.)
+- Broadcast channels (see `BroadcastChannel.postMessage()`
+  and the message event of BroadcastChannel).
+- WebRTC data channels (see the message event of
+  RTCDataChannel).
+
+The action triggered by this event is defined in a function set as the event handler for the relevant message event."¸ alias«MessageEventInit«any¸ source¸ .rest»¸ EventInit«|«data«any»¸ origin«String»¸ lastEventId«String»¸ source«?«source»»¸ ports«MessagePort»¸ .rest»»»¸ object«MessageEvent¸ extends«Event»¸ new«->«String¸ ?«MessageEventInit«any¸ source¸ |»»¸ MessageEvent»»¸ data«any¸ get»¸ origin«String¸ get»¸ lastEventId«String¸ get»¸ source«?«source»¸ get»¸ ports«MessagePort¸ get»¸ initMessageEvent«->«String¸ ?«Bool»¸ ?«Bool»¸ ?«any»¸ ?«String»¸ ?«String»¸ ?«source»¸ ?«MessagePort»¸ Unit»»»¸ "## EventSource
+
+The EventSource interface is web content's interface to server-sent events.
+
+An EventSource instance opens a persistent connection to an HTTP server, which sends events in text/event-stream format. The connection remains open until closed by calling `EventSource.close()`."¸ alias«EventSourceInit«.rest»¸ {«withCredentials«Bool»¸ .rest»»¸ object«EventSource¸ extends«EventTarget»¸ new«->«String¸ ?«EventSourceInit«|»»¸ EventSource»»¸ url«String¸ get»¸ withCredentials«Bool¸ get»¸ CONNECTING«Number¸ get¸ static»¸ OPEN«Number¸ get¸ static»¸ CLOSED«Number¸ get¸ static»¸ readyState«Number¸ get»¸ onopen«EventHandler¸ get¸ set»¸ onmessage«EventHandler¸ get¸ set»¸ onerror«EventHandler¸ get¸ set»¸ close«Unit»»¸ "## MessageChannel
+
+The MessageChannel interface of the Channel Messaging API allows us to create a new message channel and send data through it via its two MessagePort properties."¸ object«MessageChannel¸ new«MessageChannel»¸ port1«MessagePort¸ get»¸ port2«MessagePort¸ get»»¸ "## MessagePort
+
+
+The MessagePort interface of the Channel Messaging API represents one of the two ports of a MessageChannel, allowing messages to be sent from one port and listening out for them arriving at the other."¸ alias«StructuredSerializeOptions«object¸ .rest»¸ {«transfer«object»¸ .rest»»¸ object«MessagePort¸ extends«EventTarget»¸ onmessage«EventHandler¸ get¸ set»¸ onmessageerror«EventHandler¸ get¸ set»¸ postMessage«->«any¸ object¸ Unit»»¸ postMessage«->«any¸ ?«StructuredSerializeOptions«object¸ |»»¸ Unit»»¸ start«Unit»¸ close«Unit»¸ onclose«EventHandler¸ get¸ set»»¸ "## BroadcastChannel
+
+
+The BroadcastChannel interface represents a named channel that any browsing context of a given origin can subscribe to. It allows communication between different documents (in different windows, tabs, frames or iframes) of the same origin. Messages are broadcasted via a message event fired at all BroadcastChannel objects listening to the channel, except the object that sent the message."¸ object«BroadcastChannel¸ extends«EventTarget»¸ new«->«String¸ BroadcastChannel»»¸ name«String¸ get»¸ postMessage«->«any¸ Unit»»¸ close«Unit»¸ onmessage«EventHandler¸ get¸ set»¸ onmessageerror«EventHandler¸ get¸ set»»¸ "## WorkerGlobalScope
+
+
+The WorkerGlobalScope interface of the Web Workers API is an interface representing the scope of any worker. Workers have no browsing context; this scope contains the information usually conveyed by Window objects — in this case event handlers, the console or the associated WorkerNavigator object. Each WorkerGlobalScope has its own event loop."¸ object«WorkerGlobalScope¸ extends«EventTarget»¸ origin«String¸ get»¸ isSecureContext«Bool¸ get»¸ crossOriginIsolated«Bool¸ get»¸ reportError«->«any¸ Unit»»¸ btoa«->«String¸ String»»¸ atob«->«String¸ String»»¸ setTimeout«->«handler¸ ?«Number»¸ ...«any»¸ Number»»¸ clearTimeout«->«?«Number»¸ Unit»»¸ setInterval«->«handler¸ ?«Number»¸ ...«any»¸ Number»»¸ clearInterval«->«?«Number»¸ Unit»»¸ queueMicrotask«->«->«Unit¸ Unit»¸ Unit»»¸ createImageBitmap«->«source¸ ?«ImageBitmapOptions«|»»¸ ImageBitmap»»¸ createImageBitmap«->«source¸ Number¸ Number¸ Number¸ Number¸ ?«ImageBitmapOptions«|»»¸ ImageBitmap»»¸ structuredClone«->«any¸ ?«StructuredSerializeOptions«a1¸ |»»¸ any»»¸ self«WorkerGlobalScope¸ get»¸ location«WorkerLocation¸ get»¸ navigator«WorkerNavigator¸ get»¸ importScripts«->«...«String»¸ Unit»»¸ onerror«OnErrorEventHandler«a»¸ get¸ set»¸ onlanguagechange«EventHandler¸ get¸ set»¸ onoffline«EventHandler¸ get¸ set»¸ ononline«EventHandler¸ get¸ set»¸ onrejectionhandled«EventHandler¸ get¸ set»¸ onunhandledrejection«EventHandler¸ get¸ set»»¸ "## DedicatedWorkerGlobalScope
+
+The DedicatedWorkerGlobalScope object (the Worker global scope) is accessible through the self keyword. Some additional global functions, namespaces objects, and constructors, not typically associated with the worker global scope, but available on it, are listed in the JavaScript Reference. See also: Functions available to workers."¸ alias«FrameRequestCallback¸ ->«Number¸ Unit»»¸ object«DedicatedWorkerGlobalScope¸ extends«WorkerGlobalScope»¸ requestAnimationFrame«->«FrameRequestCallback¸ Number»»¸ cancelAnimationFrame«->«Number¸ Unit»»¸ onmessage«EventHandler¸ get¸ set»¸ onmessageerror«EventHandler¸ get¸ set»¸ name«String¸ get»¸ postMessage«->«any¸ object¸ Unit»»¸ postMessage«->«any¸ ?«StructuredSerializeOptions«a1¸ |»»¸ Unit»»¸ close«Unit»»¸ "## SharedWorkerGlobalScope
+
+
+The SharedWorkerGlobalScope object (the SharedWorker global scope) is accessible through the self keyword. Some additional global functions, namespaces objects, and constructors, not typically associated with the worker global scope, but available on it, are listed in the JavaScript Reference. See the complete list of functions available to workers."¸ object«SharedWorkerGlobalScope¸ extends«WorkerGlobalScope»¸ name«String¸ get»¸ close«Unit»¸ onconnect«EventHandler¸ get¸ set»»¸ "## Worker
+
+The Worker interface of the Web Workers API represents a background task that can be created via script, which can send messages back to its creator.
+
+Creating a worker is done by calling the `Worker(""path/to/worker/script"")` constructor.
+
+Workers may themselves spawn new workers, as long as those workers are hosted at the same origin as the parent page."¸ data«WorkerType¸ |«_WorkerType:classic«"classic"»¸ _WorkerType:module«"module"»»»¸ alias«WorkerOptions«.rest»¸ {«name«String»¸ type«WorkerType»¸ credentials«String»¸ .rest»»¸ object«Worker¸ extends«EventTarget»¸ onerror«EventHandler¸ get¸ set»¸ onmessage«EventHandler¸ get¸ set»¸ onmessageerror«EventHandler¸ get¸ set»¸ new«->«String¸ ?«WorkerOptions«|»»¸ Worker»»¸ terminate«Unit»¸ postMessage«->«any¸ object¸ Unit»»¸ postMessage«->«any¸ ?«StructuredSerializeOptions«a1¸ |»»¸ Unit»»»¸ "## SharedWorker
+
+
+The SharedWorker interface represents a specific kind of worker that can be accessed from several browsing contexts, such as several windows, iframes or even workers. They implement an interface different than dedicated workers and have a different global scope, SharedWorkerGlobalScope."¸ object«SharedWorker¸ extends«EventTarget»¸ onerror«EventHandler¸ get¸ set»¸ new«->«String¸ ?«String»¸ SharedWorker»»¸ port«MessagePort¸ get»»¸ "## WorkerNavigator
+
+
+The WorkerNavigator interface represents a subset of the  Navigator interface allowed to be accessed from a Worker. Such an object is initialized for each worker and is available via the `self.navigator` property."¸ object«WorkerNavigator¸ taintEnabled«Bool»¸ oscpu«String¸ get»¸ language«String¸ get»¸ languages«String¸ get»¸ onLine«Bool¸ get»¸ hardwareConcurrency«Number¸ get»»¸ "## WorkerLocation
+
+
+The WorkerLocation interface defines the absolute location of the script executed by the Worker. Such an object is initialized for each worker and is available via the `WorkerGlobalScope.location` property obtained by calling `self.location`."¸ object«WorkerLocation¸ href«String¸ get»¸ origin«String¸ get»¸ protocol«String¸ get»¸ host«String¸ get»¸ hostname«String¸ get»¸ port«String¸ get»¸ pathname«String¸ get»¸ search«String¸ get»¸ hash«String¸ get»»¸ "## Worklet
+
+The Worklet interface is a lightweight version of Web Workers and gives developers access to low-level parts of the rendering pipeline.
+
+With Worklets, you can run JavaScript and WebAssembly code to do graphics rendering or audio processing where high performance is required.
+
+Worklets allow static import of ECMAScript modules, if supported, using `import`. Dynamic import is disallowed by the specification — calling `import()` will throw."¸ alias«WorkletOptions«.rest»¸ {«credentials«String»¸ .rest»»¸ object«Worklet¸ addModule«->«String¸ ?«WorkletOptions«|»»¸ Unit»»»»»

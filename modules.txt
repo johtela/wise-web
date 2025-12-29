@@ -15,3 +15,5 @@ Html/Geometry
 Html/Media
 Html/Element
 Html/Table
+Html/Canvas
+IO/Worker
