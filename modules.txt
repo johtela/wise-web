@@ -18,3 +18,4 @@ Html/Table
 Html/Canvas
 IO/Worker
 Html/Window
+IO/Fetch
