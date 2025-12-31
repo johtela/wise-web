@@ -1,4 +1,4 @@
-IO/File«import«Lang/Number¸ Lang/String¸ Data/Buffer¸ Web/Base¸ Web/Url¸ Html/Event¸ IO/Stream»¸ "# File API
+IO/File«import«Web/Url¸ IO/Stream»¸ "# File API
 
 The File API enables web applications to access files and their contents.
 
